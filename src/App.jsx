@@ -12,7 +12,7 @@ function App() {
   }, []);
   return (
     <>
-      <h1>{post && post[0].name}</h1>
+      <h1>{post && post[0].model}</h1>
     </>
   );
 }
