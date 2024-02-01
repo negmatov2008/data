@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  cosnt[post, setPost] = useState();
+  const [post, setPost] = useState();
   async function getApi() {
     const res = await fetch("https://data-name.onrender.com/user");
     const data = await res.json();
@@ -10,9 +10,11 @@ function App() {
   useEffect(() => {
     getApi();
   }, []);
-  return <>
-  <h1>{post && post[0].name}</h1>
-  </>;
+  return (
+    <>
+      <h1>{post && post[0].name}</h1>
+    </>
+  );
 }
 
 export default App;
